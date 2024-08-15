@@ -195,7 +195,7 @@ public class RedBlackTree {
 				if (y.color == Color.RED) {
 					z.p.color = Color.BLACK;
 					y.color = Color.BLACK;
-					z.p.p.color = Color.BLACK;
+					z.p.p.color = Color.RED;
 					z = z.p.p;
 				} else {
 					if (z == z.p.right) {
